@@ -1,31 +1,8 @@
 #include <iostream>
 #include <cmath>
+#include "BIBLIO-P3-PA-ALLAN.h"
 
 using namespace std;
-
-struct tTriangulos
-{
-	
-float lado1, lado2;
-
-} t_tTriangulos;
-
-float ld1, ld2, hi, pe, ar;
-
-float hipotenusa (float ld1, float ld2)
-{
-	return sqrt((pow(ld1,2))+(pow(ld2,2)));
-}
-
-float perimetro (float ld1, float ld2, float hi)
-{
- 	return ld1+ld2+hi;
-}
-
-float area (float ld1, float ld2)
-{
- 	return (ld1*ld2)/2;
-}
 
 int main()
 {
@@ -42,17 +19,17 @@ int main()
 	cout << "Cateto 2 = " << dados.lado2 << endl;
 	cout << endl;
 	
-  ld1=dados.lado1;
-  ld2=dados.lado2;
+	ld1=dados.lado1;
+	ld2=dados.lado2;
 
 	hipotenusa (ld1, ld2);
-  hi=hipotenusa (ld1, ld2);
+	hi=hipotenusa (ld1, ld2);
 
 	perimetro (ld1, ld2, hi);
-  pe=perimetro(ld1, ld2, hi);
+	pe=perimetro(ld1, ld2, hi);
 
 	area (ld1, ld2);
-  ar=area(ld1, ld2);
+	ar=area(ld1, ld2);
 		
 	cout << "Perimetro = " << pe << endl;
 	cout << "Area = " << ar << endl;	
