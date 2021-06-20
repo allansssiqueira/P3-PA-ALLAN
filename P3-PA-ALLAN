@@ -23,7 +23,8 @@ int main()
 	ld2=dados.lado2;
 
 	hipotenusa (ld1, ld2);
-	hi=hipotenusa (ld1, ld2);
+	dados.lado3=hipotenusa (ld1, ld2);
+	hi=lados.lado3;
 
 	perimetro (ld1, ld2, hi);
 	pe=perimetro(ld1, ld2, hi);
