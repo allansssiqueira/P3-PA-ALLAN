@@ -1,7 +1,7 @@
 struct tTriangulos
 {
 	
-float lado1, lado2;
+float lado1, lado2, lado3;
 
 } t_tTriangulos;
 
